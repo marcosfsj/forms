@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import './App.css';
-import Routes from './components/routing/Routes';
+import Routes from './config/routing/Routes';
 import Landing from './features/Landing';
 
 function App() {
