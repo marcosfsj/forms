@@ -7,3 +7,4 @@ export const LOGIN_FAIL = 'LOGIN_FAIL';
 export const LOGOUT = 'LOGOUT';
 export const SELECT_SONG = 'SELECT_SONG';
 export const LOAD_SONGS = 'LOAD_SONGS';
+export const LOAD_POSTS = 'LOAD_POSTS';

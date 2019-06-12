@@ -3,7 +3,7 @@ const initialState = {
 		{ id: 1, name: "You've got a friend", duration: "2:40" },
 		{ id: 2, name: "Amanha sera um novo dia", duration: "5:00" }
 	],
-	selectedSong: { name: "", duration: "" }
+	selectedSong: null
 }
 
 const SongList = (state = initialState, action) => {

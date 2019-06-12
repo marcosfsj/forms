@@ -5,6 +5,7 @@ const FormikForm = lazy(() => import('../../features/FormikForm'));
 const PureReactForm = lazy(() => import('../../features/PureReactForm'));
 const ReactFormWithBootstrap = lazy(() => import('../../features/ReactFormWithBootstrap'));
 const SongPlayer = lazy(() => import('../../features/song-player/SongPlayer'));
+const Post = lazy(() => import('../../features/post/Post'));
 
 const Routes = () => {
   return (
@@ -14,6 +15,7 @@ const Routes = () => {
         <Route exact path='/PureReactForm' component={PureReactForm} />
         <Route exact path='/ReactFormWithBootstrap' component={ReactFormWithBootstrap} />
         <Route exact path='/SongPlayer' component={SongPlayer} />
+        <Route exact path='/Post' component={Post} />
       </Switch>
     </Suspense>
   );
