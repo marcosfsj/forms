@@ -8,7 +8,7 @@ const initialState = {
   selectedSong: null
 };
 
-const SongList = (state = initialState, action) => {
+const songsReducer = (state = initialState, action) => {
   switch (action.type) {
     case SELECT_SONG:
       return { ...state, selectedSong: action.payload };
@@ -19,4 +19,4 @@ const SongList = (state = initialState, action) => {
   }
 };
 
-export default SongList;
+export default songsReducer;

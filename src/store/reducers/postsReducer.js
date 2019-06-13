@@ -4,7 +4,7 @@ const initialState = {
   postList: []
 };
 
-const PostList = (state = initialState, action) => {
+const postsReducer = (state = initialState, action) => {
   switch (action.type) {
     case LOAD_POSTS:
       return { ...state, postList: action.payload };
@@ -13,4 +13,4 @@ const PostList = (state = initialState, action) => {
   }
 };
 
-export default PostList;
+export default postsReducer;
