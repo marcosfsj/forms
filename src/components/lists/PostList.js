@@ -1,19 +1,28 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { loadPosts } from "../../store/actions/Post";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { loadPosts } from '../../store/actions/PostList';
 
 class PostList extends Component {
-	componentDidMount() {
-		this.props.loadPosts();
-	}
+  componentDidMount() {
+    this.props.loadPosts();
+  }
 
-	render() {
-		return (
-			<div>
-				post list
-			</div>
-		)
-	}
+  renderPosts() {
+    return this.props.postList.map(post => {
+      return <div key={post.id}>{post.id}</div>;
+    });
+  }
+
+  render() {
+    return <div>{this.renderPosts()}</div>;
+  }
 }
 
-export default connect(null, { loadPosts })(PostList);
+const mapStateToProps = state => {
+  return { postList: state.postList };
+};
+
+export default connect(
+  mapStateToProps,
+  { loadPosts }
+)(PostList);
