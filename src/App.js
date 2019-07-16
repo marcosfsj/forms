@@ -2,7 +2,7 @@ import React from 'react';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import thunk from 'react-thunk';
+import thunk from 'redux-thunk';
 import Reducers from './store/reducers/Reducers';
 import Routes from './config/routing/Routes';
 import Landing from './features/Landing';
